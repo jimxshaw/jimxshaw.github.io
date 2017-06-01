@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+My name is Jimmy Shaw. I'm a software developer and technology enthusiast. I write about code, culture, sports, the web, what we've done and where we're headed.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+You'll find my portfolio on [GitHub](https://github.com/jimxshaw) and my public profile on [LinkedIn](https://www.linkedin.com/in/jimxshaw/).
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Disclaimer: This blog, its contents and opinions are my own. They do not represent my past, present or future employer's views in any way.
