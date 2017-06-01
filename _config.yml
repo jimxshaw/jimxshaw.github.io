@@ -16,7 +16,7 @@
 title: Jimmy Shaw Thoughts
 email: jimmyshaw.me@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  The official blog of a coding enthusiast.
+  The official blog of a passionate coder.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  jimxshaw
@@ -24,8 +24,11 @@ github_username:  jimxshaw
 # Build settings
 markdown: kramdown
 theme: minima
+paginate: 5
 gems:
   - jekyll-feed
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
+  - .vscode
