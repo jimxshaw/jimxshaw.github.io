@@ -13,6 +13,9 @@ Bold statement isn't it? There was a time when I wouldn't have even considered c
 
 I was an accounting major in college. An investment bank hired me on as an intern in the summer of 2010 in their Broker-Dealer Services (BDS) group. Being a BDS intern was an eye-opening experience as I learned about the operations of a crucial piece of the whole bank. I enjoyed it but then *something unexpected* happened. The VP of BDS, my manager, felt the group was performing well but that no one was taking notice. A way to increase visibility to our peers and to the higher ups was to have an internal Sharepoint site to promote our group. No site existed so I was tasked to build it from scratch.
 
+Sharepoint 2007 example:
+![Sharepoint 2007][Sharepoint2007]
+
 Never in my life had I "coded" anything but my manager gave me a task and I couldn't fail him. I buckled down and started learning Microsoft Sharepoint. I designed, tested and deployed the BDS Sharepoint site to production in a week. We got the visibility we wanted because the VP of the Commercial Paper (CP) group took notice and asked my manager if I could create that group's Sharepoint site too. I gladly accepted and deployed the CP's Sharepoint shortly before the internship concluded. As far as I know those Sharepoints still exist to this day.
 
 ### Career Change
@@ -23,3 +26,7 @@ A move wasn't possible as an IT Director told me the bank and likely every other
 
 ### Apprenticeship at The Software Guild
 
+
+
+
+[Sharepoint2007]: http://enterprise-dashboard.com/img/sharepoint-community-portal.png
