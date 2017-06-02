@@ -30,7 +30,7 @@ For a year I completed every Computer Science pre-requisite class imaginable, fr
 
 ### I, Software Developer
 
-Within a couple of months of returning to Texas, I was doing side work in Android development and even a little Python. Had I ever done mobile development? No. Had I ever automated mundane tasks in Python? No. That didn't matter as I tried anyway, regardless how little the pay, or if at all. The Great One Wayne Gretzky said, "You miss 100% of the shots you don't take." I took those shots again and again throughout the summer of 2016 until a company gave me a full-time opportunity as a C#/.NET developer. I finally summitted the mountain.
+Within a couple of months of returning to Texas, I was doing side work in Android development and even a little Python. Had I ever done mobile development? No. Had I ever automated mundane tasks in Python? No. That didn't matter as I tried anyway, regardless how little the pay, or if at all. The Great One Wayne Gretzky said, "You miss 100% of the shots you don't take." I took those shots again and again throughout the summer of 2016 until a company gave me a full-time opportunity as a C#/.NET developer. I finally summitted the mountain so-to-speak.
 
 A successful summit of K2, "The Savage Mountain":
 ![K2 Summit][K2]
