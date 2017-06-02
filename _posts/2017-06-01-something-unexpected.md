@@ -26,13 +26,13 @@ A move wasn't possible as an IT Director told me the bank and likely every other
 
 ### Apprenticeship at The Software Guild
 
-For a year I completed every Computer Science pre-requisite class imaginable, from coding (Java, C# etc.) to mathematics (Calculus, Discrete Math, Linear Algebra etc.) to the pure science (Physics etc.). However before I committed another 2+ years to the degree, I accepted an Apprenticeship at [The Software Guild](https://www.thesoftwareguild.com/curriculum/) in Ohio. The Apprenticeship taught me the practical side of software development using the latest .NET platform, ASP.NET 4.6 MVC 5 plus SQL Server. Me and a team of fellow apprentices designed, implemented, tested and deployed multiple MVC 5 applications under the guidance of Developer Leads and even a [Microsoft MVP](https://mvp.microsoft.com/en-us/PublicProfile/4025435?fullName=Sarah%20E%20Dutkiewicz). Guild leaders emphasized and we ourselves internalized that a piece of paper doesn't define you and your skills. Your development work defines you. Period. 
+For a year I completed every Computer Science pre-requisite class imaginable, from coding (Java, C# etc.) to mathematics (Calculus, Discrete Math, Linear Algebra etc.) to the pure science (Physics etc.). However before I committed another 2+ years to the degree, I accepted an Apprenticeship at [The Software Guild][SoftwareGuild] in Ohio. The Apprenticeship taught me the practical side of software development using the latest .NET platform, ASP.NET 4.6 MVC 5 plus SQL Server. Me and a team of fellow apprentices designed, implemented, tested and deployed multiple MVC 5 applications under the guidance of Developer Leads and even a [Microsoft MVP][MSMVP]. Guild leaders emphasized and we ourselves internalized that a piece of paper doesn't define you and your skills. Your development work defines you. Period. 
 
 ### I, Software Developer
 
-Within a couple of months of returning to Texas, I was doing side work off of Craigslist in Android development and even a little Python. Had I ever done mobile development? No. Had I ever automated mundane tasks in Python? No. Was hunting for work on Craigslist glamorous? Of course not. That didn't matter as I tried anyway, regardless how little the pay, or if at all. The Great One Wayne Gretzky said, "You miss 100% of the shots you don't take." I took those shots again and again throughout the summer of 2016 until a company gave me a full-time opportunity as a C#/.NET developer. I finally summitted the mountain.
+Within a couple of months of returning to Texas, I was doing side work in Android development and even a little Python. Had I ever done mobile development? No. Had I ever automated mundane tasks in Python? No. That didn't matter as I tried anyway, regardless how little the pay, or if at all. The Great One Wayne Gretzky said, "You miss 100% of the shots you don't take." I took those shots again and again throughout the summer of 2016 until a company gave me a full-time opportunity as a C#/.NET developer. I finally summitted the mountain.
 
-Summit of K2, "The Savage Mountain":
+A successful summit of K2, "The Savage Mountain":
 ![K2 Summit][K2]
 
 Was my mission to be a software developer complete? Yes but that's not good enough. Technology is ever changing. Code only moves in one direction, perpetually forward. There's no time to be complacent. 
@@ -49,4 +49,6 @@ Thank you and I hope you enjoy my blog.
 
 
 [Sharepoint2007]: http://enterprise-dashboard.com/img/sharepoint-community-portal.png
+[SoftwareGuild]: https://www.thesoftwareguild.com/curriculum/
+[MSMVP]: https://mvp.microsoft.com/en-us/PublicProfile/4025435?fullName=Sarah%20E%20Dutkiewicz
 [K2]: http://s30.postimg.org/8y4o6wpkh/Untitled.jpg
