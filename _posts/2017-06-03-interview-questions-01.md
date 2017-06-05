@@ -7,7 +7,7 @@ categories: interview
 
 ![Technical Interview][TechnicalInterview]
 
-Here are some software developer interview questions I found on the internet and my answers to them. Most of the questions are about C#/.NET and SQL Server, as I'm most familiar with these technologies. 
+For you future software developers out there, interviews can be tough. Here are some common interview questions and answers. Most of the questions are about C#/.NET and SQL Server, as I'm most familiar with those technologies. Use this as an overview. Be sure to dig deeper into the various topics to get a more thorough understanding.
 
 ### 1. Describe SQL
 
@@ -83,7 +83,7 @@ REST stands for REpresentational State Transfer. It's an architectural style mea
 - Code on Demand: A server can extend or customize client functionality by transferring executable code.
 - Uniform Interface: The API and API consumers share one single technical interface such as URI, HTTP methods and HTTP media types.
 
-I'll dive deeper in a future blog post dedicated to REST.
+I'll write a future blog post dedicated to REST that provides more detail.
 
 ### 7. What's an API resource? Describe its connection to routing
 
