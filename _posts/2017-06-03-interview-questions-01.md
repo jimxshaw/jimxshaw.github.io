@@ -120,6 +120,15 @@ public class HomeController: Controller
 }
 ```   
 
+### 9. What's MVC?
+
+Model-View-Controller (MVC) is a popular design pattern used to create web applications. Microsoft has two latest MVC flavors of its own: ASP.NET 4.6 MVC 5 and ASP.NET Core MVC. 
+
+I'll use a movie analogy to better illustrate what MVC is.
+
+- Model: Models are your actors. They often represent a real world entity, such as Customer, Order, Invoice etc. There's generally one C# class per model.
+- View: Views are the scenes where your actors reside. The UI that the outside world interacts with is your view. A view typically needs to display data and the entity models that are bound to your view holds the data. MVC 5 Views comprise of HTML, CSS and JavaScript and rendered by the Razor View Engine.
+- Controller: You have your actors and your scenes prepared but how do you fit the pieces together to form a movie. You need a director of course! The controller is the director of your MVC application. It contains the logic that determine which models are bound to which views and how operations that result from user interactions get handled.        
 
 **To Be Continued...**
 
