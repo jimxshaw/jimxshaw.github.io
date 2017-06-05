@@ -7,9 +7,7 @@ categories: interview
 
 ![Technical Interview][TechnicalInterview]
 
-Here are some software developer interview questions I found on the internet and my answers to them. Most of the questions are about C#/.NET and SQL Server, as I'm most familiar with these technologies.
-
-Test yourself. See how many you can answer off the top of your head.  
+Here are some software developer interview questions I found on the internet and my answers to them. Most of the questions are about C#/.NET and SQL Server, as I'm most familiar with these technologies. 
 
 ### 1. Describe SQL
 
