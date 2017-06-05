@@ -93,7 +93,32 @@ Resources represent real world entities. If our API were a online store then res
 
 ### 8. What's Attribute Routing?
 
-ASP.NET MVC Routes are defined in RouteConfig.cs. For large projects, enterprise level projects for example, conventional routing is not enough. Special routing scenarios arise where it's tough to keep track of all those routes in a single file. Routes are physically separated from the controllers of which they belong with conventional routing. Developers may have to become Sherlock Holmes, the world's greatest detective, to be able to decipher and understand the relationships. Attribute routing was created to give developers a better experience.     
+ASP.NET MVC Routes are defined in RouteConfig.cs. For large projects, enterprise level projects for example, conventional routing is not enough. Special routing scenarios arise where it's tough to keep track of all those routes in a single file. Routes are physically separated from the controllers of which they belong with conventional routing. Developers may have to become Sherlock Holmes, the world's greatest detective, to be able to decipher and understand the relationships. Attribute routing was created to give developers a better experience.  
+
+```cs
+// With attribute routing, routes can be placed directly
+// on the controller or actions.
+[RoutePrefix("Vendor")]
+public class HomeController: Controller 
+{
+    // route: Vendor/Index
+    public ActionResult Index() 
+    {
+        ViewBag.Message = "This is the Vendor portal's home index";
+        return View();
+    }
+}
+
+public class HomeController: Controller
+{
+    [Route("Employees/About")]
+    public ActionResult About() 
+    {
+        ViewBag.Message = "Learn more about our employees!";
+        return View();
+    }
+}
+```   
 
 
 **To Be Continued...**
