@@ -130,6 +130,11 @@ I'll use a movie analogy to better illustrate what MVC is.
 - View: Views are the scenes where your actors reside. The UI that the outside world interacts with is your view. A view typically needs to display data and the entity models that are bound to your view holds the data. MVC 5 Views comprise of HTML, CSS and JavaScript and rendered by the Razor View Engine.
 - Controller: You have your actors and your scenes prepared but how do you fit the pieces together to form a movie. You need a director of course! The controller is the director of your MVC application. It contains the logic that determine which models are bound to which views and how operations that result from user interactions get handled.        
 
-**To Be Continued...**
+### 10. Give a brief summary of the .NET Framework
+
+The .NET Framework is comprised of the Framework Class Library (FCL) and the Common Language Runtime (CLR). 
+
+- FCL: The FCL is a massive collection of previously built code and types. It has all built-in types, arrays, exceptions, math libraries, File I/O, security, collections, reflection, threading, networking and so on. Even more general functionality classes for database access or GUI creation like WinForms and WPF are included. Many of these classes form the foundation of applications created for the Windows platform.
+- CLR: In order for a language to be compatible with .NET, like C# for example, C#'s compiler can't simply compile C# source code down to general assembly language. It must compile down to a special type of assembly language called Common Intermediate Language (CIL). The CLR is .NET's virtual machine that accepts CIL and compiles it down to binary instructions that all Windows platform hardware can understand. If you want to add a new language to .NET then all you need is a new compiler with the ability to compile down to CIL. Once your source code exists in CIL then the CLR will take care of the rest as far as running that code. You, the developer, shouldn't have to worry about hardware architectures or operating systems. The CLR takes care of memory management for you as well.  
 
 [TechnicalInterview]: https://putadesign.vn/wp-content/uploads/2016/03/slide3.jpg
