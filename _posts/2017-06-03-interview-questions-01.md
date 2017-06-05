@@ -7,7 +7,9 @@ categories: interview
 
 ![Technical Interview][TechnicalInterview]
 
-For you future software developers out there, interviews can be tough. Here are some common interview questions and answers. Most of the questions are about C#/.NET and SQL Server, as I'm most familiar with those technologies. Use this as an overview. Be sure to dig deeper into the various topics to get a more thorough understanding.
+For you future software developers out there, your first interview can be tough. Here are some common entry level interview questions and answers. Most of the questions are about C#/.NET and SQL Server, as I'm most familiar with those technologies. Use this as an overview. Be sure to dig deeper and to broaden your scope to topics not covered here in order to get a more thorough understanding.
+
+I plan on having more coding interview posts in the future. It'll be a continuing series so check back periodically.
 
 ### 1. Describe SQL
 
@@ -88,5 +90,12 @@ I'll write a future blog post dedicated to REST that provides more detail.
 ### 7. What's an API resource? Describe its connection to routing
 
 Resources represent real world entities. If our API were a online store then resources would be Customers, Orders, Items, Invoices, Payments etc. like in an actual physical store. Resource relationships are usually nested, where a Customer has many Orders and those Orders have their own order Items. Resources work hand-in-hand with routing through the use of Uniform Resource Identifiers (URIs). For example, if you want to retrieve all Orders for a particular Customer then your API routing would utilize the following URI: http://.../api/Customers/42/Orders. This route can be generalized with {resource1}/{id1}/{resource2}/{id2} and so on.
+
+### 8. What's Attribute Routing?
+
+ASP.NET MVC Routes are defined in RouteConfig.cs. For large projects, enterprise level projects for example, conventional routing is not enough. Special routing scenarios arise where it's tough to keep track of all those routes in a single file. Routes are physically separated from the controllers of which they belong with conventional routing. Developers may have to become Sherlock Holmes, the world's greatest detective, to be able to decipher and understand the relationships. Attribute routing was created to give developers a better experience.     
+
+
+**To Be Continued...**
 
 [TechnicalInterview]: https://putadesign.vn/wp-content/uploads/2016/03/slide3.jpg
