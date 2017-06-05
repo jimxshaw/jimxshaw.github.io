@@ -13,6 +13,10 @@ Here are some software developer interview questions that employers asked me ove
 
 SQL or Structured Query Language is the language used to access and manipulate databases and data within databases. Microsoft SQL Server uses a specific kind of Structured Query Language called Transact-SQL or T-SQL. 
 
+#### 2. What's a SQL view?
+
+A view is the virtual result set of a pre-written SQL query. That result set can then itself be queried against. Views are virtual because they don't actually exist as part of a database schema. They're dynamically generated only when requested.
+
 ```sql
 -- Example view.
 CREATE VIEW vwCustomersAndOrders
@@ -24,10 +28,6 @@ FROM
         INNER JOIN tblOrders AS O ON C.ID = O.CustomerID
 GO
 ```
-
-#### 2. What's a SQL view?
-
-A view is the virtual result set of a pre-written SQL query. That result set can then itself be queried against. Views are virtual because they don't actually exist as part of a database schema. They're dynamically generated only when requested.
 
 #### 3. Describe a primary key and an identity column
 
