@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Common Coding Interview Questions 01"
+title:  "Coding Interview Questions 01"
 date:   2017-06-03 18:26:33 -0500
 categories: interview
 ---
@@ -85,6 +85,8 @@ REST stands for REpresentational State Transfer. It's an architectural style mea
 
 I'll dive deeper in a future blog post dedicated to REST.
 
+#### 7. What's an API resource? Describe its connection to routing
 
+Resources represent real world entities. If our API were a online store then resources would be Customers, Orders, Items, Invoices, Payments etc. like in an actual physical store. Resource relationships are usually nested, where a Customer has many Orders and those Orders have their own order Items. Resources work hand-in-hand with routing through the use of Uniform Resource Identifiers (URIs). For example, if you want to retrieve all Orders for a particular Customer then your API routing would utilize the following URI: http://.../api/Customers/42/Orders. This route can be generalized with {resource1}/{id1}/{resource2}/{id2} and so on.
 
 [TechnicalInterview]: https://putadesign.vn/wp-content/uploads/2016/03/slide3.jpg
