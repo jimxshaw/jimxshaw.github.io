@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Interview Questions 01"
+title:  "Common Coding Interview Questions 01"
 date:   2017-06-03 18:26:33 -0500
 categories: interview
 ---
 
 ![Technical Interview][TechnicalInterview]
 
-Here are some software developer interview questions that employers asked me over the years and my answers to them. Most of the questions are about C# and .NET, as those technologies are of which I'm most familiar. 
+Here are some software developer interview questions that employers asked me over the years and my answers to them. Most of the questions are about C#/.NET and SQL Server, as I'm most familiar with those technologies. 
 
 #### 1. Describe SQL
 
@@ -53,5 +53,38 @@ RIGHT() takes a certain number of characters(s) from the input string starting f
 SELECT LEFT('Better angels of our nature', 4) -- Bett
 SELECT RIGHT('We the people', 2) -- le
 ```
+
+#### 5. Elaborate on DROP, DELETE and TRUNCATE
+
+When you DROP a table, the table itself and all records within it are removed from the database. 
+
+Issuing a DELETE statement on a table removes all records from that table. DELETE does not reset the table's identity column.
+
+When you TRUNCATE a table, all records are removed from that table and the table's identity column is reset.
+
+```sql
+DELETE FROM tblEmployees
+WHERE LastName = 'Smith' -- Remove Employees with the last name of Smith.
+
+TRUNCATE TABLE tblEmployees -- Removes all Employees table data and resets identity column.
+
+DROP TABLE tblEmployees -- Removes the Employees table complete from the database.
+```
+
+#### 6. What is a RESTful web API?
+
+REST stands for REpresentational State Transfer. It's an architectural style meant to convey how a well-designed web application should behave through various constraints. A web API that abides by any of REST's constraints is considered to be RESTful. A web API that abides by all of REST's constraints is a true REST web API.
+
+6 REST constraints:
+- Client-Server: A clear separation between the Client and the Server.
+- Statelessness: The necessary state to handle every request is contained within the request itself.
+- Cacheable: Each response must explicitly state whether or not it can be cached or not.
+- Layered System: When a solution is comprised of multiple architectural layers, no one layer can directly access a layer that's beyond the next one.
+- Code on Demand: A server can extend or customize client functionality by transferring executable code.
+- Uniform Interface: The API and API consumers share one single technical interface such as URI, HTTP methods and HTTP media types.
+
+I'll dive deeper in a future blog post dedicated to REST.
+
+
 
 [TechnicalInterview]: https://putadesign.vn/wp-content/uploads/2016/03/slide3.jpg
