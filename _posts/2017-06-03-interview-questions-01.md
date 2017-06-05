@@ -7,7 +7,7 @@ categories: interview
 
 ![Technical Interview][TechnicalInterview]
 
-For you future software developers out there, your first interview can be tough. Here are some common entry level interview questions and answers. Most of the questions are about C#/.NET and SQL Server, as I'm most familiar with those technologies. Use this as an overview. Be sure to dig deeper and to broaden your scope to topics not covered here in order to get a more thorough understanding.
+For you future software developers out there, your first interview can be tough. Here are some common interview questions and answers. Most of the questions are about C#/.NET and SQL Server, as I'm most familiar with those technologies. Use this as an overview. Be sure to dig deeper and to broaden your scope to topics not covered here in order to get a more thorough understanding.
 
 I plan on having more coding interview posts in the future. It'll be a continuing series so check back periodically.
 
