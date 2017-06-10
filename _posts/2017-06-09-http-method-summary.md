@@ -55,7 +55,7 @@ We return a 204 No Content after a successful DELETE request of a particular res
 
 ```
 Request:
-DELETE api/makes/
+DELETE api/makes
 
 Response:
 204 No Content 
