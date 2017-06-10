@@ -102,3 +102,76 @@ Response:
 
 Adding a collection of resources, if allowed, should have a new resource uri created for that collection. For example, we can call it MakeCollections and a POST request to that resource will contain an array of Makes. We return a 201 Created with the new collection in the response body for a successful response and return 404 if that resource collection doesn't exist.
 
+#### Consumer
+
+```
+Request:
+PUT api/makes/{makeId} <- {make}
+
+Response:
+201 Created -> {make}
+``` 
+
+When the consumer of our api is allowed to create resource uris, we can ["upsert"][Upsert] to create resources. For example, a PUT request is issued to update an existing resource, fine, but if the same PUT request is issued on a resource that doesn't exist then that will result in the resource being created. Hence, why a 201 Created is returned with the newly created Make in the response body. A 404 Not Found will never occur because a non-existant resource will be created. 
+
+```
+Request:
+PATCH api/makes/{makeId} <- {JsonPatchDocument on make}
+
+Response:
+201 Created -> {make}
+``` 
+
+Upserting with a partial resource update with a PATCH request works identically to upserting with PUT except that a json patch document is included in the request.
+
+### Updating Resources
+
+```
+Request:
+PUT api/makes/{makeId} <- {make}
+
+Response:
+200 Ok -> {make}
+204 No Content
+404 Not Found
+```  
+
+Issuing a PUT request on a resource updates that resource. Since it's a PUT, we should pass in the request the full Make representation or else omitted fields will be set to their default values. We can either return 200 Ok with the successfully updated resource representation in the response body or just state 204 No Content. Non-existant resources return a 404 Not Found, unless we're [upserting][Upsert]. 
+
+```
+Request:
+PUT api/makes <- [{make}, {make}, ...]
+
+Response:
+200 Ok -> [{make}, {make}, ...]
+204 No Content
+404 Not Found
+```
+
+Using a PUT request to mass update is usually never allowed but can be done. It follows the same guidelines as updating a single resource except the resource collection is pass in the request and the updated collection is returned in the successful response body. Non-existant resources return a 404 Not Found, unless we're [upserting][Upsert]. 
+
+```
+Request:
+PATCH api/makes/{makeId} <- {JsonPatchDocument on make}
+
+Response:
+200 Ok -> {make}
+204 No Content
+404 Not Found
+```
+
+Partial updates with a PATCH request is similar to a PUT request. Except we do not have to pass with the request a full representation of the resource. We state the fields we want to update in a json patch document and omitted fields keep their present values. A successful response can return 200 Ok with the patched resource representation in the body or simply state 204 No Content. Non-existant resources return a 404 Not Found, unless we're [upserting][Upsert]. 
+
+```
+Request:
+PATCH api/makes <- {JsonPatchDocument on make}
+
+Response:
+200 Ok -> [{make}, {make}, ...]
+204 No Content
+404 Not Found
+```
+
+Using PATCH to mass update resources, like most mass operations, are rarely allowed. If it is allowed then it follows the same guidelines as PATCHing a single resource. 
+
+[Upsert]: https://en.wikipedia.org/wiki/Merge_(SQL) 
