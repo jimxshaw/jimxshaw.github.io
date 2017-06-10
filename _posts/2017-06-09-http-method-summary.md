@@ -100,3 +100,5 @@ Response:
 404 Not Found
 ```  
 
+Adding a collection of resources, if allowed, should have a new resource uri created for that collection. For example, we can call it MakeCollections and a POST request to that resource will contain an array of Makes. We return a 201 Created with the new collection in the response body for a successful response and return 404 if that resource collection doesn't exist.
+
