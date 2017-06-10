@@ -51,7 +51,7 @@ Response:
 404 Not Found
 ```
 
-We return a 204 No Content after a successful DELETE request of a particular resource and return a 404 if the resource is not found.
+We return a 204 No Content after a successful DELETE request of a particular resource and return a 404 if the resource is not found. No Content means the server has successfully fulfilled the request and that there's nothing to be sent with the response body.
 
 ```
 Request:
