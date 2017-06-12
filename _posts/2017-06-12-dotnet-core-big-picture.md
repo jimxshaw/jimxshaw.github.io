@@ -15,7 +15,20 @@ Our choice of platform makes no difference as .NET Core features are universal a
 
 Finally, .NET Core implements the new [.NET Standard][dotnetstandard]. The purpose of .NET Standard is to have an official agreement of .NET apis that are available across all platforms of .NET. It's essentially one giant library to rule them all. Code sharing between multiple .NET platforms becomes easier for those platforms that implement this standard. The old way of using Portable Class Libraries jumping from platform to platform should fade.
 
+### ASP.NET Core
+
+ASP.NET Core is an open-source, cross-platform framework for building modern, cloud-based internet connected applications. In addition to web apps, this framework can be used for mobile apps and [Internet-Of-Things][iot] apps as well. 
+
+Being open-souce, we can peruse ASP.NET Core's source code at [github.com/aspnet][aspnetcoresource] and freely contribute to that project. 
+
+ASP.NET Core is cross-platform so we can write our apps on Windows, MacOS or Linux. A variety of IDEs and text editors are available are on those platforms from the ever reliable Visual Studio to Visual Studio Code to [Project Rider by JetBrains][projectrider]. 
+
+Microsoft created ASP.NET Core from scratch. It's not an update to ASP.NET 4 as that framework was based on the System.Web namespace, which meant having many excess functionalities. The Core team decided to forgo big and bulky for granular and lean. As with .NET Core, ASP.NET Core is also based on modular Nuget packages. We only import the packages we need for our app. Less excess results in tighter security, reduced maintenance and improved performance.    
+
 [dotnet]: https://weblog.west-wind.com/images/2016/ASP.NET%20Core%20Overview/NetPlatformOverviewTomorrow.png
 [dotnetcore]: https://docs.microsoft.com/en-us/dotnet/core/
 [fulldotnet]: https://docs.microsoft.com/en-us/dotnet/framework/
 [dotnetstandard]: https://docs.microsoft.com/en-us/dotnet/standard/library
+[iot]: https://en.wikipedia.org/wiki/Internet_of_things
+[aspnetcoresource]: https://github.com/aspnet
+[projectrider]: https://www.jetbrains.com/rider/
