@@ -17,13 +17,19 @@ Finally, .NET Core implements the new [.NET Standard][dotnetstandard]. The purpo
 
 ### ASP.NET Core
 
+#### Overview
+
 ASP.NET Core is an open-source, cross-platform framework for building modern, cloud-based internet connected applications. In addition to web apps, this framework can be used for mobile apps and [Internet-Of-Things][iot] apps as well. 
 
 Being open-souce, we can peruse ASP.NET Core's source code at [github.com/aspnet][aspnetcoresource] and freely contribute to that project. 
 
 ASP.NET Core is cross-platform so we can write our apps on Windows, MacOS or Linux. A variety of IDEs and text editors are available are on those platforms from the ever reliable Visual Studio to Visual Studio Code to [Project Rider by JetBrains][projectrider]. 
 
-Microsoft created ASP.NET Core from scratch. It's not an update to ASP.NET 4 as that framework was based on the System.Web namespace, which meant having many excess functionalities. The Core team decided to forgo big and bulky for granular and lean. As with .NET Core, ASP.NET Core is also based on modular Nuget packages. We only import the packages we need for our app. Less excess results in tighter security, reduced maintenance and improved performance.    
+Microsoft created ASP.NET Core from scratch. It's not an update to ASP.NET 4 as that framework was based on the System.Web namespace, which meant having many excess functionalities. The Core team decided to forgo big and bulky for granular and lean. As with .NET Core, ASP.NET Core is also based on modular Nuget packages. We only import the packages we need for our app. Less excess results in tighter security, reduced maintenance and improved performance.
+
+#### Frameworks
+
+ASP.NET Core apps can target either the full .NET Framework or .NET Core. If we choose full .NET then we'll have all the dependencies we're used to having. Since .NET Core is newer, not all the assemblies are available yet. There's the possibility that .NET Core will never port over certain assemblies. However, if the app wants to maximize modularity, have a small memory footprint and be cross-platform then nothing beats targeting .NET Core. Unless we utilize .NET features to it's fullest, ASP.NET Core apps should choose .NET Core as their framework.
 
 [dotnet]: https://weblog.west-wind.com/images/2016/ASP.NET%20Core%20Overview/NetPlatformOverviewTomorrow.png
 [dotnetcore]: https://docs.microsoft.com/en-us/dotnet/core/
