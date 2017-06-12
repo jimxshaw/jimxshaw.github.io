@@ -5,6 +5,8 @@ date:   2017-06-12 16:10:34 -0500
 categories: dotnet
 ---
 
+![dotnet][dotnet]
+
 The new-ish [.NET Core][dotnetcore] is a modular verion of the full [.NET Framework][fulldotnet]. Microsoft designed .NET Core to be portable across multiple platform in order to maximize code sharing and code re-use. It's a subset of the full .NET Framework that provides key functionalities to create the application we want and be able to reuse that app's code wherever, regardless of platform. 
 
 Our choice of platform makes no difference as .NET Core features are universal across all of them. For web apps, we could choose Windows, Linux or MacOS. Non-web app platforms include desktops, mobile and other devices. 
@@ -13,6 +15,7 @@ Our choice of platform makes no difference as .NET Core features are universal a
 
 Finally, .NET Core implements the new [.NET Standard][dotnetstandard]. The purpose of .NET Standard is to have an official agreement of .NET apis that are available across all platforms of .NET. It's essentially one giant library to rule them all. Code sharing between multiple .NET platforms becomes easier for those platforms that implement this standard. The old way of using Portable Class Libraries jumping from platform to platform should fade.
 
+[dotnet]: https://weblog.west-wind.com/images/2016/ASP.NET%20Core%20Overview/NetPlatformOverviewTomorrow.png
 [dotnetcore]: https://docs.microsoft.com/en-us/dotnet/core/
 [fulldotnet]: https://docs.microsoft.com/en-us/dotnet/framework/
 [dotnetstandard]: https://docs.microsoft.com/en-us/dotnet/standard/library
