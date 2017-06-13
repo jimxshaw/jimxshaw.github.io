@@ -50,6 +50,45 @@ Calling UseStartup with some kind of start up type is important as that class co
 
 Finally, the web host instance is built and ran.
 
+### Startup.cs
+
+```cs
+// Startup.cs
+namespace SampleApp
+{
+    public class Startup
+    {
+        // This method gets called by the runtime. Use this method to add services to the container.
+        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        public void ConfigureServices(IServiceCollection services)
+        {
+        }
+
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        {
+            loggerFactory.AddConsole();
+
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.Run(async (context) =>
+            {
+                await context.Response.WriteAsync("Hello World!");
+            });
+        }
+    }
+}
+```
+
+The ConfigureServices method allows us to add and configure services. How are services defined in ASP.NET Core? A service is a component that's intended for common consumption in an app. Examples could be framework specific services like MVC or Entity Framework services or app specific services like a service to send emails. Those services are registered in the ConfigureServices method and then will be available for dependency injection in whichever parts of the app that needs them. 
+
+ConfigureServices is an optional method. An ASP.NET Core web app could solely use built-in services and never utilize any third party or custom built services. That's an unlikely scenario for anything other than the most trivial of apps.  
+
+The Configure method is called after the ConfigureServices method. Configure takes in built-in or registered services through dependency injection and configures them. Configure determines how an ASP.NET Core web app responds to individual HTTP requests. For example, the built-in logging service, denoted by an instance of ILoggerFactory, is injected into this method. It's configured to add the console by calling AddConsole. When an HTTP response results in logging then the the logged items are written to the console. Currently, every successful HTTP response will result in "Hello World!" being printed to the screen.
+
 [newproject]: /assets/images/2017-06-12-aspdotnet-core-pipeline/01_new_project.jpg
 [webservers]: https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/
 [applicationinsights]: https://github.com/Microsoft/ApplicationInsights-aspnetcore/wiki/Getting-Started
