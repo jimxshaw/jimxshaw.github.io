@@ -89,8 +89,19 @@ ConfigureServices is an optional method. An ASP.NET Core web app could solely us
 
 The Configure method is called after the ConfigureServices method. Configure takes in built-in or registered services through dependency injection and configures them. Configure determines how an ASP.NET Core web app responds to individual HTTP requests. For example, the built-in logging service, denoted by an instance of ILoggerFactory, is injected into this method. It's configured to add the console by calling AddConsole. When an HTTP response results in logging then the the logged items are written to the console. Currently, every successful HTTP response will result in "Hello World!" being printed to the screen.
 
+### Request Pipeline
+
+![ASP.NET Core Request Pipeline][pipeline]
+
+When an HTTP request is issued, it must be handled accordingly before it can result in an HTTP response. ASP.NET Core's request pipeline is comprised of the code that handles requests and ultimately results in responses. The pipeline is configured with middleware. Individual middleware assembled together within the pipeline are what processes requests and responses. Examples of middleware are ones dealing with logging, authentication or displaying static files. Even MVC itself is a middleware that can to be add to the pipeline.
+
+After a request has been issued it hits each piece of middleware sequentially, one by one where each middleware performs some operation on it until finally a response is generated. Each middleware that the request hits chooses whether or not to forward it to the next middleware. This means the order of which we add the middleware to the pipeline is critical. 
+
+For example, if the authentication middleware cannot verify the issuer then the request is terminated immediately, the pipeline stops, and a 401 Unauthorized status code is returned as the response. Other middleware that are meant to trigger as a result of the authentication middleware's operation should obviously be added to the pipeline after the authentication middleware.
+
 [newproject]: /assets/images/2017-06-12-aspdotnet-core-pipeline/01_new_project.jpg
 [webservers]: https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/
 [applicationinsights]: https://github.com/Microsoft/ApplicationInsights-aspnetcore/wiki/Getting-Started
+[pipeline]: https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/_static/request-delegate-pipeline.png
 
 **To Be Continued...**
