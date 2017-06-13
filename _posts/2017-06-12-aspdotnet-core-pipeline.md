@@ -99,9 +99,14 @@ After a request has been issued it hits each piece of middleware sequentially, o
 
 For example, if the authentication middleware cannot verify the issuer then the request is terminated immediately, the pipeline stops, and a 401 Unauthorized status code is returned as the response. Other middleware that are meant to trigger as a result of the authentication middleware's operation should obviously be added to the pipeline after the authentication middleware.
 
+The request pipeline is assembled in the Startup's Configure method. See above.
+
+First, the logging middleware utilizing the console is hit. Next, if the present environment is classified as Development then a developer friendly exception page middleware will show whenever exceptions occur. Finally, middleware to always display "Hello World!" is written during running of the app.
+
+Take a look at Microsoft's [official documentation][documentation] for more information. 
+
 [newproject]: /assets/images/2017-06-12-aspdotnet-core-pipeline/01_new_project.jpg
 [webservers]: https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/
 [applicationinsights]: https://github.com/Microsoft/ApplicationInsights-aspnetcore/wiki/Getting-Started
 [pipeline]: https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/_static/request-delegate-pipeline.png
-
-**To Be Continued...**
+[documentation]: https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware
