@@ -23,4 +23,10 @@ Go has concurreny baked into the base language so there's no need to import anot
 
 A Go app compiles down to a single self-contained binary, which makes versioning headaches obsolete. 
 
+### Resources
+
+Be sure to check out the official Go [website][godocs] for more information.
+
 [gogopher]: /assets/images/2018-04-20-go-overview/go-gopher.png
+
+[godocs]: https://golang.org/
