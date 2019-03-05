@@ -7,4 +7,4 @@ categories: DevOps
 
 <span style="display:block;text-align:center;">![containers ship][ship]</span>
 
-[ship]: assets/images/2019-03-04-containers-overview/containers-ship.jpg
+[ship]: /assets/images/2019-03-04-containers-overview/containers-ship.jpg
