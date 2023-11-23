@@ -3,7 +3,7 @@ name: Publish Hugo Site
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   update_hugo_npm_dependencies:
