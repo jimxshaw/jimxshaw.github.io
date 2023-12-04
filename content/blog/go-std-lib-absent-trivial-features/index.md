@@ -12,7 +12,7 @@ tags:
 
 The Go standard library (std lib) was deliberately created to be minimalistic compared to the standard libraries of other languages. This design choice fits with Go's philosophy of simplicity and the preference for small, independent features that can be combined in different ways. Knowing this, there are many commonly used functions that you might expect to find in the Go std lib but are absent because they were deemed "too trivial" to write.
 
-Here are some of the common functions and my trivial implementation of them.
+Here are some common absent functions and my trivial implementations for them.
 
 #### Slice Contains Value
 
