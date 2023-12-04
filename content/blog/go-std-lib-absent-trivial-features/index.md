@@ -10,7 +10,7 @@ tags:
   - Golang
 ---
 
-The Go standard library (std lib) was deliberately created to be minimalistic compared to the standard libraries of other languages. This design choice fits with Go's philosophy of simplicity and the preference for small, independent features that can be combined in different ways. Knowing this, there are many commonly used functions that you might expect to find in the Go std lib but are absent because they were deemed "too trivial" to write.
+The Go [standard library (std lib)][std lib] was deliberately created to be minimalistic compared to the standard libraries of other languages. This design choice fits with Go's philosophy of simplicity and the preference for small, independent features that can be combined in different ways. Knowing this, there are many commonly used functions that you might expect to find in the Go std lib but are absent because they were deemed "too trivial" to write.
 
 Here are some common absent functions and my trivial implementations for them.
 
@@ -27,6 +27,9 @@ func Contains(slice []int, input int) bool {
   }
   return false
 }
+
+numbers := []int{1, 2, 3}
+result := Contains(numbers, 3) // true
 ```
 
 As of **Go 1.18 (March 2022)**, it's possible to use generics.
@@ -34,16 +37,22 @@ As of **Go 1.18 (March 2022)**, it's possible to use generics.
 ```go
 func Contains[T comparable](slice []T, input T) bool {
   for _, el := range slice {
-    if el == intput {
+    if el == input {
       return true
     }
   }
   return false
 }
 
+numbers := []int{1, 2, 3}
+result := Contains(numbers, 3) // true
+
+fruits := []string{"apple", "banana", "peach"}
+result := Contains(fruits, "grape") // false
+
 ```
 
-As of **Go 1.21 (August 2023)**, the previously experimental *slices* package has been added to the std lib and it has a *Contains* function.
+As of **Go 1.21 (August 2023)**, the previously experimental [slices package][slices package] has been added to the std lib and it has a *Contains* function.
 
 ```go
 import "slices"
@@ -51,3 +60,54 @@ import "slices"
 sports := []string{"football", "baseball", "basketball"}
 slices.Contains(sports, "football") // true
 ```
+
+#### Map over a Slice
+
+Map means to apply a function to each element in a slice and then create a new slice with the results.
+
+```go
+func Map(slice []int, fn func(int) int) []int {
+  result := make([]int, len(slice))
+  for i, el := range slice {
+    result[i] = fn(el)
+  }
+  return result
+}
+
+numbers := []int{1, 2, 3}
+doubled := Map(numbers, func(n int) int { return n * 2 }) // [2, 4, 6]
+```
+
+As of **Go 1.18 (March 2022)**, it's possible to use generics.
+
+```go
+func Map[T, V any](slice []T, fn func(T) V) []V {
+  result := make([]V, len(slice))
+  for i, el := range slice {
+      result[i] = fn(el)
+  }
+  return result
+}
+
+numbers := []int{1, 2, 3}
+plusOne := Map(numbers, func(n int) int { return n + 1 }) // [2, 3, 4]
+strSlice := Map(numbers, func(n int) string { return fmt.Sprint("Item:%d", n) }) // ["Item:1", "Item:2", "Item:3"]
+```
+
+#### Resources
+
+[Go std lib documentation][std lib]
+
+[std lib slices package][slices package]
+
+[Go 1.18 Release Notes][Go 1.18]
+
+[Go 1.21 Release Notes][Go 1.21]
+
+[std lib]: https://pkg.go.dev/std
+
+[slices package]: https://pkg.go.dev/slices
+
+[Go 1.18]: https://tip.golang.org/doc/go1.18
+
+[Go 1.21]: https://tip.golang.org/doc/go1.21
