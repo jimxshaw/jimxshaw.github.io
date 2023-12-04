@@ -14,12 +14,12 @@ The Go standard library (std lib) was deliberately created to be minimalistic co
 
 Here are some of the common functions and my trivial implementation of them.
 
-**Slice Contains Int**
+#### Slice Contains Value
 
 Check to see if a slice contains an input value.
 
 ```go
-func contains(slice []int, input int) bool {
+func Contains(slice []int, input int) bool {
   for _, el := range slice {
     if el == input {
       return true
@@ -27,4 +27,27 @@ func contains(slice []int, input int) bool {
   }
   return false
 }
+```
+
+As of **Go 1.18 (March 2022)**, it's possible to use generics.
+
+```go
+func Contains[T comparable](slice []T, input T) bool {
+  for _, el := range slice {
+    if el == intput {
+      return true
+    }
+  }
+  return false
+}
+
+```
+
+As of **Go 1.21 (August 2023)**, the previously experimental *slices* package has been added to the std lib and it has *Contains* function.
+
+```go
+import "slices"
+
+sports := []string{"football", "baseball", "basketball"}
+slices.Contains(sports, "football") // true
 ```
