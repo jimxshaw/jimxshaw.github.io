@@ -43,7 +43,7 @@ func Contains[T comparable](slice []T, input T) bool {
 
 ```
 
-As of **Go 1.21 (August 2023)**, the previously experimental *slices* package has been added to the std lib and it has *Contains* function.
+As of **Go 1.21 (August 2023)**, the previously experimental *slices* package has been added to the std lib and it has a *Contains* function.
 
 ```go
 import "slices"
