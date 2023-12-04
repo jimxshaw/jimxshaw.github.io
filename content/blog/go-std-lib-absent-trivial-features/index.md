@@ -10,9 +10,11 @@ tags:
   - Golang
 ---
 
-The Go [standard library (std lib)][std lib] was deliberately created to be minimalistic compared to the standard libraries of other languages. This design choice fits with Go's philosophy of simplicity and the preference for small, independent features that can be combined in different ways. Knowing this, there are many commonly used functions that you might expect to find in the Go std lib but are absent because they were deemed "too trivial" to write.
+The Go [standard library (std lib)][std lib] was deliberately created to be minimalistic compared to the standard libraries of other languages. This design choice fits with Go's philosophy of simplicity and the preference for small, independent features that can be combined in different ways. 
 
-Here are some common absent functions and my trivial implementations for them.
+There are many commonly used functions that you might expect to find in the Go std lib but are absent because they were thought to be "too trivial" to write.
+
+Here are a few missing ones and my trivial implementations for them.
 
 #### Slice Contains Value
 
@@ -137,6 +139,47 @@ filteredStr := Filter(weather, func(s string) bool {
 }) // ["architecture"]
 ```
 
+#### Reduce a Slice
+
+Reduce means to take a slice and combine its elements into a single value using an input combining function.
+
+```go
+func Reduce(slice []int, initial int, fn func(int, int) int) int {
+  result := initial
+  for _, el := range slice {
+      result = fn(result, el)
+  }
+  return result
+}
+
+prices := []int{100, 20, 30}
+total := Reduce(prices, 0, func(accumulation, price int) int { return accumulation + price }) // 150
+
+```
+
+As of **Go 1.18 (March 2022)**, it's possible to use generics.
+
+```go
+func Reduce[T, M any](slice []T, fn func(M, T) M, initial M) M {
+  result := initial
+  for _, el := range slice {
+      result = fn(result, el)
+  }
+  return result
+}
+
+words := []string{"This", "is", "Go!"}
+concatenated := Reduce(words, func(accumulation, next string) string {
+  return accumulation + " " + next
+}) // "This is Go!"
+```
+___
+
+My functions list is by no means exhaustive and neither is my implementation for them. 
+
+What other absent functions have you written implementations for?
+
+Feel free to share!
 
 #### Resources
 
