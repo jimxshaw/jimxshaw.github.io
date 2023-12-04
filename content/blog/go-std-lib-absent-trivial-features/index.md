@@ -94,6 +94,50 @@ plusOne := Map(numbers, func(n int) int { return n + 1 }) // [2, 3, 4]
 strSlice := Map(numbers, func(n int) string { return fmt.Sprint("Item:%d", n) }) // ["Item:1", "Item:2", "Item:3"]
 ```
 
+#### Filter a Slice
+
+Filter means to extract slice elements that meet a certain criteria from an input function and return a new slice with elements that meet the criteria.
+
+```go
+func Filter(slice []int, fn func(int) bool) []int {
+    var result []int
+    for _, el := range slice {
+        if fn(el) {
+            result = append(result, el)
+        }
+    }
+    return result
+}
+
+ages := []int{14, 18, 21, 16, 25, 5}
+adults := Filter(ages, func(age int) bool { return age >= 18 }) // [18, 21, 25]
+```
+
+As of **Go 1.18 (March 2022)**, it's possible to use generics.
+
+```go
+func Filter[T any](slice []T, fn func(T) bool) []T {
+  var result []T
+  for _, el := range slice {
+      if fn(el) {
+          result = append(result, el)
+      }
+  }
+  return result
+}
+
+numbers := []int{1, 2, 3}
+filteredNum := Filter(numbers, func(n int) bool {
+  return n > 1
+}) // [2, 3]
+
+words := []string{"engine", "architecture", "home"}
+filteredStr := Filter(weather, func(s string) bool {
+  return len(s) > 7
+}) // ["architecture"]
+```
+
+
 #### Resources
 
 [Go std lib documentation][std lib]
