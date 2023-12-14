@@ -65,5 +65,10 @@ I am suggesting you try to keep your eyes open for someone who needs help: call 
 
 It feels good to get outside of ourselves and our problems, even if for a little while, to be given a new perspective.
 
+### 7. Dress Comfortably
 
+Sounds silly? It's one of the most practical advice I can give you! During the holidays my cousins and I celebrate Pajamarama. It's a self-created ritual where we wear pajamas, watch movies and spend time together.
 
+Dress yourself in ways that nourish comfort, joy and self-care. **Comfort + Fun = A Great Time**
+
+I'm blessed to support your journey towards wholeness this holiday season! 
