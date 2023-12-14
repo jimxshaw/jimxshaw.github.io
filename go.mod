@@ -1,6 +1,6 @@
 module jimxshaw.github.io
 
-go 1.21
+go 1.21.4
 
 require (
 	github.com/schnerring/hugo-mod-json-resume v0.0.0-20231113034307-65ffefcbc5ff // indirect
