@@ -51,4 +51,19 @@ Your presence is a gift! Your willingness to share your time with others and to 
 
 If you feel compelled to give gifts then consider gifts that you feel good about giving, you could make yourself or coupons you create redeemable for time spent together doing fun activities.
 
+### 5. Create your own Holiday
+
+Do you feel holidays are imposed on you rather than something you choose? Are there certain holiday rituals you have always forced yourself to do because "that's the way it is"?
+
+You have permission to use your imagination to design holiday rituals that embody what the holidays really mean to you! This will give you a feeling of belonging and relating to the holidays on a more profound level. Often it feels like we're tolerating life rather than creating it. I encourage you to take time to create a ritual this holiday season that has special meaning for you. You'll be surprised at the impact this can have on your holiday cheer!
+
+### 6. Be of Service
+
+I have a ritual of volunteering during the holidays such as going to soup kitchens, help with crisis hotlines or packaging items for the needy. There are only a few of the many ways we can be of service to others. I'm not suggesting you to stress over how to give, especially if you already exhaust yourself by giving too much to others and not enough to yourself. 
+
+I am suggesting you try to keep your eyes open for someone who needs help: call someone to check in to remind them they're not alone, help someone who is struggling in some way. Randomly leave sticky notes in public places, on cars, on doors with kind words such as "I'm grateful you exist!", "You matter!", etc.
+
+It feels good to get outside of ourselves and our problems, even if for a little while, to be given a new perspective.
+
+
 
