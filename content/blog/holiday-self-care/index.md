@@ -39,7 +39,7 @@ If you decide against taking your own transportation then I encourage you to hav
 
 A holiday from work or school doesn't mean a holiday from who you are. Neglecting your normal routines, the very foundation of what makes you whole, can disrupt your equilibrium. 
 
-Contine to maintain your daily routine even during the holidays. Give yourself and others the opportunity to be known and to know you. Your routine is intrinsic to who you are. Take a few minutes to write down what you do on a daily basis that gives you a sense of balance. 
+Continue to maintain your daily routine even during the holidays. Give yourself and others the opportunity to be known and to know you. Your routine is intrinsic to who you are. Take a few minutes to write down what you do on a daily basis that gives you a sense of balance. 
 
 A few examples of common daily routines may include number of meals, types of foods, needed medicine, bathing, exercise, prayer or meditation, socializing with your support posse, amount of sleep, hobbies, etc.
 
@@ -67,7 +67,7 @@ It feels good to get outside of ourselves and our problems, even if for a little
 
 ### 7. Dress Comfortably
 
-Sounds silly? It's one of the most practical advice I can give you! During the holidays my cousins and I celebrate Pajamarama. It's a self-created ritual where we wear pajamas, watch movies and spend time together.
+Sounds silly? It's one of the most practical advice I can give you! During the holidays my cousins and I celebrate Pajamarama. It's a self-created ritual created by us when we were little kids where we wear pajamas, watch movies and spend time together. We still do this as adults with families of our own.
 
 Dress yourself in ways that nourish comfort, joy and self-care. 
 
