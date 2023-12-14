@@ -69,7 +69,9 @@ It feels good to get outside of ourselves and our problems, even if for a little
 
 Sounds silly? It's one of the most practical advice I can give you! During the holidays my cousins and I celebrate Pajamarama. It's a self-created ritual where we wear pajamas, watch movies and spend time together.
 
-Dress yourself in ways that nourish comfort, joy and self-care. **Comfort + Fun = A Great Time**
+Dress yourself in ways that nourish comfort, joy and self-care. 
+
+**Comfort + Fun = A Great Time**
 
 ---
 
