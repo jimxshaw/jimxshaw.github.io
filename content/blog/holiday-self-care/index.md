@@ -71,4 +71,6 @@ Sounds silly? It's one of the most practical advice I can give you! During the h
 
 Dress yourself in ways that nourish comfort, joy and self-care. **Comfort + Fun = A Great Time**
 
+---
+
 I'm blessed to support your journey towards wholeness this holiday season! 
