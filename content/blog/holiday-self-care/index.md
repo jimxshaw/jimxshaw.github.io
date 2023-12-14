@@ -34,3 +34,13 @@ How many times have you felt trapped in a place because you didn't take your own
 You can bestow yourself with the peace of mind by knowing ahead of time how you can leave when you need to. Knowing this will lessen hyper-sensitivity to triggers or acting out in ways you'd prefer not to.
 
 If you decide against taking your own transportation then I encourage you to have ride-share apps ready and always have cash on hand if an actual taxi service is needed. You have the right to leave a place where you feel unsafe or disrespected. 
+
+### 3. Health Routine
+
+A holiday from work or school doesn't mean a holiday from who you are. Neglecting your normal routines, the very foundation of what makes you whole, can disrupt your equilibrium. 
+
+Contine to maintain your daily routine even during the holidays. Give yourself and others the opportunity to be known and to know you. Your routine is intrinsic to who you are. Take a few minutes to write down what you do on a daily basis that gives you a sense of balance. 
+
+A few examples of common daily routines may include number of meals, types of foods, needed medicine, bathing, exercise, prayer or meditation, socializing with your support posse, amount of sleep, hobbies, etc.
+
+### 4. You are a Gift
