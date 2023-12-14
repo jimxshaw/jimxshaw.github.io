@@ -35,7 +35,7 @@ You can bestow yourself with the peace of mind by knowing ahead of time how you 
 
 If you decide against taking your own transportation then I encourage you to have ride-share apps ready and always have cash on hand if an actual taxi service is needed. You have the right to leave a place where you feel unsafe or disrespected. 
 
-### 3. Health Routine
+### 3. Healthy Routine
 
 A holiday from work or school doesn't mean a holiday from who you are. Neglecting your normal routines, the very foundation of what makes you whole, can disrupt your equilibrium. 
 
@@ -44,3 +44,11 @@ Contine to maintain your daily routine even during the holidays. Give yourself a
 A few examples of common daily routines may include number of meals, types of foods, needed medicine, bathing, exercise, prayer or meditation, socializing with your support posse, amount of sleep, hobbies, etc.
 
 ### 4. You are a Gift
+
+The holidays have become a commodity. How many stories are there of people suffering emotionally and economically trying to make sure they have gifts for everyone they "should" give to?
+
+Your presence is a gift! Your willingness to share your time with others and to allow others to get to know you is worth more than becoming indebted or depleting emotional reserves. 
+
+If you feel compelled to give gifts then consider gifts that you feel good about giving, you could make yourself or coupons you create redeemable for time spent together doing fun activities.
+
+
