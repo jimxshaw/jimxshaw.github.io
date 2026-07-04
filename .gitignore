@@ -154,3 +154,5 @@ dist
 .svelte-kit
 
 .DS_Store
+
+package-lock.json
