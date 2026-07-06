@@ -1,0 +1,76 @@
+baseurl = "https://jimmyshaw.me/"
+title = "Jim Shaw"
+theme = "hugo-theme-cleanwhite"
+languageCode = "en-us"
+preserveTaxonomyNames = true
+hasCJKLanguage = false
+
+[services]
+  [services.disqus]
+    shortname = ""
+  [services.googleAnalytics]
+    id = ""
+
+[pagination]
+  pagerSize = 5
+
+[outputs]
+home = ["HTML", "RSS"]
+
+[params]
+  header_image = "img/home-bg.jpg"
+  SEOTitle = "Software Engineer"
+  description = "Software engineer writing about .NET, Go, ML, and cybersecurity."
+  keyword = "Jim Shaw, software engineer, cybersecurity, machine learning, golang, dotnet"
+  slogan = "Software Engineer · Technology Enthusiast"
+  upstreamAttribution = true
+
+  image_404 = "img/404-bg.jpg"              # ← YOU: add an image to static/img/
+  title_404 = "Page not found :("
+  omit_categories = false
+
+  page_view_counter = false
+  leancloud_app_id = ""
+  leancloud_app_key = ""
+
+  algolia_search = false
+  algolia_appId = ""
+  algolia_indexName = ""
+  algolia_apiKey = ""
+
+  sidebar_about_description = "Software engineer with 10+ years of experience. Currently studying AI/ML and cybersecurity at UT Dallas."
+  sidebar_avatar = "img/jim_shaw.jpeg"      # this one's already in your static/
+
+  featured_tags = true
+  featured_condition_size = 1
+
+  friends = false    # turn on later if you want a blogroll
+  bookmarks = false
+  about_me = true
+
+  last_posts = true
+
+  [params.social]
+  rss           = true
+  linkedin      = "https://www.linkedin.com/in/jimxshaw"
+  github        = "https://github.com/jimxshaw"
+
+  [[params.additional_menus]]
+  title = "ABOUT"
+  href  = "/about/"
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 2
+    startLevel = 1
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[mediaTypes]
+  [mediaTypes.'font/woff']
+    suffixes = ['woff']
+  [mediaTypes.'font/woff2']
+    suffixes = ['woff2']
