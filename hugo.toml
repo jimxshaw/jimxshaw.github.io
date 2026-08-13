@@ -24,6 +24,7 @@ home = ["HTML", "RSS"]
   keyword = "Jim Shaw, software engineer, cybersecurity, AI, machine learning, golang, dotnet"
   slogan = "Software Engineer · Technology Enthusiast"
   upstreamAttribution = true
+  custom_css = ["css/custom.css"]
 
   image_404 = "img/404-bg.jpg"              # ← YOU: add an image to static/img/
   title_404 = "Page not found :("
