@@ -1,3 +1,9 @@
 a:focus:not(:focus-visible) {
   outline: none;
 }
+
+.post-preview .post-meta {
+  font-family: sans-serif;
+  font-style: normal;
+}
+
