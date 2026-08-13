@@ -23,7 +23,7 @@ home = ["HTML", "RSS"]
   description = "Software engineer writing about AI, ML, Cybersecurity."
   keyword = "Jim Shaw, software engineer, cybersecurity, AI, machine learning, golang, dotnet"
   slogan = "Software Engineer · Technology Enthusiast"
-  upstreamAttribution = true
+  upstreamAttribution = false
   custom_css = ["css/custom.css"]
 
   image_404 = "img/404-bg.jpg"              # ← YOU: add an image to static/img/
@@ -48,6 +48,9 @@ home = ["HTML", "RSS"]
   friends = false    # turn on later if you want a blogroll
   bookmarks = false
   about_me = true
+
+  auto_theme = false
+  dark_mode_toggle = true
 
   last_posts = true
 
