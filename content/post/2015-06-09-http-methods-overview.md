@@ -6,8 +6,7 @@ comments: false
 socialShare: true
 toc: false
 tags: 
-  - web dev
-  - http
+  - Web Dev
 ---
 
 HTTP methods, also known as HTTP verbs, are fundamental to web development as they define the action to be performed on a given resource identified by a Request-URI. They are essential in RESTful APIs, where the method signifies the desired action on the server's data.  

@@ -6,11 +6,11 @@ comments: false
 socialShare: true
 toc: false
 tags:
-  - holidays
-  - thanksgiving
-  - christmas 
-  - hanukkah
-  - new year
+  - Holidays
+  - Thanksgiving
+  - Christmas 
+  - Hanukkah
+  - New Year
 ---
 
 Facing the holidays can be daunting to anyone, especially if you're exhausted and feeling burn-out. The looming specter of faking holiday cheer is cringeworthy at best, particularly while trying to keep the peace. 

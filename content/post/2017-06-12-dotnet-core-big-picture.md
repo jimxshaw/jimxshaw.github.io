@@ -6,9 +6,8 @@ comments: false
 socialShare: true
 toc: false
 tags:
-  - csharp
-  - .NET
-  - dotnet core
+  - C#
+  - Dotnet
 ---
 
 ![dotnet](/img/dotnet-core.jpg)
