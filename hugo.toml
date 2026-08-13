@@ -20,8 +20,8 @@ home = ["HTML", "RSS"]
 [params]
   header_image = "img/home-bg.jpg"
   SEOTitle = "Software Engineer"
-  description = "Software engineer writing about .NET, Go, ML, and cybersecurity."
-  keyword = "Jim Shaw, software engineer, cybersecurity, machine learning, golang, dotnet"
+  description = "Software engineer writing about AI, ML, Cybersecurity."
+  keyword = "Jim Shaw, software engineer, cybersecurity, AI, machine learning, golang, dotnet"
   slogan = "Software Engineer · Technology Enthusiast"
   upstreamAttribution = true
 
@@ -38,7 +38,7 @@ home = ["HTML", "RSS"]
   algolia_indexName = ""
   algolia_apiKey = ""
 
-  sidebar_about_description = "Software engineer with 10+ years of experience. Currently studying AI/ML and cybersecurity at UT Dallas."
+  sidebar_about_description = "Software engineer with 9+ years of professional experience, focused on AI/ML and cybsecurity."
   sidebar_avatar = "img/jim_shaw.jpeg"      # this one's already in your static/
 
   featured_tags = true
@@ -51,7 +51,6 @@ home = ["HTML", "RSS"]
   last_posts = true
 
   [params.social]
-  rss           = true
   linkedin      = "https://www.linkedin.com/in/jimxshaw"
   github        = "https://github.com/jimxshaw"
 
