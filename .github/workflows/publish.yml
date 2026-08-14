@@ -6,46 +6,8 @@ on:
       - master
 
 jobs:
-  update_hugo_npm_dependencies:
-    name: Update Hugo npm Dependencies
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    outputs:
-      commit_hash: ${{ steps.commit_changes.outputs.commit_hash }}
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Install Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: "18"
-
-      - name: Install Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: "0.111.3"
-          extended: true
-
-      - name: Write composite package.json
-        run: hugo mod npm pack
-
-      - name: Install npm Packages
-        run: npm install
-
-      - name: Display Changes
-        run: git status
-
-      - name: Commit Changes
-        id: commit_changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: Update Hugo npm Dependencies
-
   publish:
     name: Publish Hugo Site
-    needs: update_hugo_npm_dependencies
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -53,28 +15,19 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
-          ref: ${{ needs.update_hugo_npm_dependencies.outputs.commit_hash }}
-
-      - name: Install Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: "18"
+          fetch-depth: 0 # Preserves .GitInfo and .Lastmod for posts.
+          submodules: true # Pulls in the CleanWhite theme submodule.
 
       - name: Install Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "0.111.3"
-          extended: true
-
-      - name: Install npm Packages
-        run: npm ci
+          hugo-version: "0.162.1"
 
       - name: Build Hugo
         run: hugo --environment production --minify
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public

@@ -6,12 +6,11 @@ comments: false
 socialShare: true
 toc: false
 tags:
-  - csharp
-  - .NET
-  - dotnet core
+  - C#
+  - Dotnet
 ---
 
-![dotnet][dotnet]
+![dotnet](/img/dotnet-core.jpg)
 
 The .NET ecosystem has evolved significantly since 2016 when .NET Core 1.0 was released. Initially introduced as a lean, modular, and cross-platform subset of the full .NET Framework, .NET Core has matured into a robust platform for building a wide range of applications.
 
@@ -69,7 +68,6 @@ Microsoft created ASP.NET Core from scratch. It's not an update to ASP.NET 4 as 
 
 ASP.NET Core apps can target either the full .NET Framework or .NET Core. If we choose full .NET then we'll have all the dependencies we're used to having. Since .NET Core is newer, not all the assemblies are available yet. There's the possibility that .NET Core will never port over certain assemblies. However, if the app wants to maximize modularity, have a small memory footprint and be cross-platform then nothing beats targeting .NET Core. Unless we utilize .NET features to it's fullest, ASP.NET Core apps should choose .NET Core as their framework.
 
-[dotnet]: https://weblog.west-wind.com/images/2016/ASP.NET%20Core%20Overview/NetPlatformOverviewTomorrow.png
 [dotnetcore]: https://docs.microsoft.com/en-us/dotnet/core/
 [fulldotnet]: https://docs.microsoft.com/en-us/dotnet/framework/
 [dotnetstandard]: https://docs.microsoft.com/en-us/dotnet/standard/library
